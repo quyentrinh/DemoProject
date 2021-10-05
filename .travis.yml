@@ -22,7 +22,7 @@ language: objective-c
 language: objective-c
 xcode_workspace: DemoProject.xcworkspace
 xcode_scheme: DemoProject-Dev
-xcode_destination: platform=iOS Simulator,OS=13.4,name=Phone 11 Pro
+xcode_destination: platform=iOS Simulator,OS=13.4,name=iPhone 11 Pro
 before_install:
   - bundle install
   - bundle exec pod install --repo-update
