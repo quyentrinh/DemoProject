@@ -1,7 +1,7 @@
 language: objective-c
 xcode_project: DemoProject.xcodeproj # path to your xcodeproj folder
-xcode_scheme: DemoProject-PRO
-xcode_destination: platform=iOS Simulator,OS=14.5,name=iPhone 12 Pro
+xcode_scheme: DemoProject-Dev
+xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone X
 before_install:
   - bundle install
   - bundle exec pod install --repo-update
