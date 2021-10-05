@@ -6,6 +6,9 @@ script:
 before_install:
   - bundle install
   - bundle exec pod install --repo-update
+  - export IOS_SIMULATOR_UDID=`instruments -s devices | grep "iPhone 12 Pro (14.5)" | awk -F '[ ]' '{print $4}' | awk -F '[\[]' '{print $2}' | sed 's/.$//'`
+  - echo $IOS_SIMULATOR_UDID
+  - open -a "simulator" --args -CurrentDeviceUDID $IOS_SIMULATOR_UDID
 
 
 
