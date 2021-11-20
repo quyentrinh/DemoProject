@@ -18,7 +18,6 @@ class ViewController: UIViewController {
         appBundleIdLabel.text = try! Configuration.value(for: "APP_ID")
         appVersionLabel.text = try! Configuration.value(for: "APP_VERSION")
         
-        
     }
 
 
