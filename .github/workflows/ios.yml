@@ -16,7 +16,7 @@ jobs:
       matrix:
         destination: ['platform=iOS Simulator,OS=13.1,name=iPhone 11']
         xcode: ['/Applications/Xcode_11.1.app/Contents/Developer']
-        scheme: DemoProject-Dev
+        scheme: 'DemoProject-Dev'
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -25,12 +25,12 @@ jobs:
 #        run: bundle install
 #        env:
 #          BUNDLE_GITHUB__COM: x-access-token:${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
-      - name: Set Default Scheme
-        run: |
-          scheme_list=$(xcodebuild -list -json | tr -d "\n")
-          default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['schemes'][0]")
-          echo $default | cat >default
-          echo Using default scheme: $default
+#      - name: Set Default Scheme
+#        run: |
+#          scheme_list=$(xcodebuild -list -json | tr -d "\n")
+#          default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['schemes'][0]")
+#          echo $default | cat >default
+#          echo Using default scheme: $default
       - name: Build and test
         run: xcodebuild -workspace DemoProject.xcworkspace -scheme "$scheme" -destination "$destination" ONLY_ACTIVE_ARCH=NO
         env:
