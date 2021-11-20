@@ -1,0 +1,5 @@
+#include "Pods/Target Support Files/Pods-DemoProject/Pods-DemoProject.production.xcconfig"
+
+FX_APP_NAME = Project (production)
+FX_APP_VERSION = 0.1
+FX_APP_BUNDLE_ID = quyentrinh.DemoProject.production

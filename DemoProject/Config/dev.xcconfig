@@ -1,0 +1,6 @@
+#include "Pods/Target Support Files/Pods-DemoProject/Pods-DemoProject.dev.xcconfig"
+
+FX_APP_NAME = Project (dev)
+FX_APP_VERSION = 0.3
+FX_APP_BUNDLE_ID = quyentrinh.DemoProject.dev
+

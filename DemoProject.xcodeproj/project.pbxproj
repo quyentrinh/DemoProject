@@ -37,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11334DE556FE14A61A4D9EC8 /* Pods-DemoProject.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoProject.staging.xcconfig"; path = "Target Support Files/Pods-DemoProject/Pods-DemoProject.staging.xcconfig"; sourceTree = "<group>"; };
-		11E545A3A3AAE0FB9946D235 /* Pods-DemoProject.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoProject.dev.xcconfig"; path = "Target Support Files/Pods-DemoProject/Pods-DemoProject.dev.xcconfig"; sourceTree = "<group>"; };
-		593861B4C87C0B4F43AA5AF2 /* production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = production.xcconfig; path = "Target Support Files/Pods-DemoProject/production.xcconfig"; sourceTree = "<group>"; };
-		9D68604DD94C88D2D2E3459A /* Pods-DemoProject.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoProject.production.xcconfig"; path = "Target Support Files/Pods-DemoProject/Pods-DemoProject.production.xcconfig"; sourceTree = "<group>"; };
-		D572129A3E2D5ACCE36B98DF /* dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = dev.xcconfig; path = "Target Support Files/Pods-DemoProject/dev.xcconfig"; sourceTree = "<group>"; };
+		593861B4C87C0B4F43AA5AF2 /* production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = production.xcconfig; sourceTree = "<group>"; };
+		8F857B00ACB8E6038C187E49 /* Pods-DemoProject.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoProject.dev.xcconfig"; path = "Target Support Files/Pods-DemoProject/Pods-DemoProject.dev.xcconfig"; sourceTree = "<group>"; };
+		A1F5C53C5E4AFFFF65EE9000 /* Pods-DemoProject.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoProject.staging.xcconfig"; path = "Target Support Files/Pods-DemoProject/Pods-DemoProject.staging.xcconfig"; sourceTree = "<group>"; };
+		A2D6180C9780FFBD32AD8189 /* Pods-DemoProject.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoProject.production.xcconfig"; path = "Target Support Files/Pods-DemoProject/Pods-DemoProject.production.xcconfig"; sourceTree = "<group>"; };
+		D572129A3E2D5ACCE36B98DF /* dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = dev.xcconfig; sourceTree = "<group>"; };
 		EF95C744270B4AE700E403ED /* ConfigurationHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationHelp.swift; sourceTree = "<group>"; };
-		EF95C746270B4B8D00E403ED /* staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = staging.xcconfig; path = "Target Support Files/Pods-DemoProject/staging.xcconfig"; sourceTree = "<group>"; };
+		EF95C746270B4B8D00E403ED /* staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = staging.xcconfig; sourceTree = "<group>"; };
 		EFE72FB4270C8CC300EEC8F5 /* DemoProject UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DemoProject UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE72FB6270C8CC300EEC8F5 /* DemoProject_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoProject_UITests.swift; sourceTree = "<group>"; };
 		EFE72FB8270C8CC300EEC8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,14 +98,21 @@
 		B925D9C5C1141EDEA066E53D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				8F857B00ACB8E6038C187E49 /* Pods-DemoProject.dev.xcconfig */,
+				A1F5C53C5E4AFFFF65EE9000 /* Pods-DemoProject.staging.xcconfig */,
+				A2D6180C9780FFBD32AD8189 /* Pods-DemoProject.production.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EFCB6FA92748EC5A00CB7D51 /* Config */ = {
+			isa = PBXGroup;
+			children = (
 				D572129A3E2D5ACCE36B98DF /* dev.xcconfig */,
 				EF95C746270B4B8D00E403ED /* staging.xcconfig */,
 				593861B4C87C0B4F43AA5AF2 /* production.xcconfig */,
-				11E545A3A3AAE0FB9946D235 /* Pods-DemoProject.dev.xcconfig */,
-				11334DE556FE14A61A4D9EC8 /* Pods-DemoProject.staging.xcconfig */,
-				9D68604DD94C88D2D2E3459A /* Pods-DemoProject.production.xcconfig */,
 			);
-			path = Pods;
+			path = Config;
 			sourceTree = "<group>";
 		};
 		EFE72FB5270C8CC300EEC8F5 /* DemoProject UITests */ = {
@@ -151,6 +158,7 @@
 		EFF6D43A270B1779003C17AB /* DemoProject */ = {
 			isa = PBXGroup;
 			children = (
+				EFCB6FA92748EC5A00CB7D51 /* Config */,
 				EFF6D43B270B1779003C17AB /* AppDelegate.swift */,
 				EFF6D43D270B1779003C17AB /* SceneDelegate.swift */,
 				EFF6D43F270B1779003C17AB /* ViewController.swift */,
@@ -459,7 +467,7 @@
 		};
 		EF95C743270B477C00E403ED /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11334DE556FE14A61A4D9EC8 /* Pods-DemoProject.staging.xcconfig */;
+			baseConfigurationReference = EF95C746270B4B8D00E403ED /* staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1047,7 +1055,7 @@
 		};
 		EFF6D44D270B1779003C17AB /* Dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11E545A3A3AAE0FB9946D235 /* Pods-DemoProject.dev.xcconfig */;
+			baseConfigurationReference = D572129A3E2D5ACCE36B98DF /* dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1070,7 +1078,7 @@
 		};
 		EFF6D44E270B1779003C17AB /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D68604DD94C88D2D2E3459A /* Pods-DemoProject.production.xcconfig */;
+			baseConfigurationReference = 593861B4C87C0B4F43AA5AF2 /* production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
